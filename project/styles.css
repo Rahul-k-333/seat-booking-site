@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.bus-container {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.seats-container {
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.seat {
+    width: 60px;
+    height: 60px;
+    background-color: #eee;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border:3px solid;
+}
+
+.seat.selected {
+    background-color: #29a858;
+    color: white;
+}
+
+.seat.booked {
+    background-color:#616060;
+    cursor: not-allowed;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #03591f;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.seat-info, .info {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#bookedSeatsText, #availableSeatsText, #selectedSeatsText {
+    margin-top: 10px;
+    font-size: 16px;
+}
+.seat:hover{
+    background-color: darkgray;
+}
+
+
